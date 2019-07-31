@@ -53,14 +53,9 @@ class AddBookmark extends Component {
         url.value = ''
         description.value = ''
         rating.value = ''
-<<<<<<< HEAD
-        this.props.history.push('/')
-        this.props.onAddBookmark(data)
-=======
         this.context.addBookmark(data)
         this.props.history.push('/')
         //this.props.onAddBookmark(data)
->>>>>>> context-startingpoint
       })
       .catch(error => {
         this.setState({ error })
@@ -152,9 +147,5 @@ class AddBookmark extends Component {
   }
 }
 
-<<<<<<< HEAD
-export default withRouter(AddBookmark);
-=======
 //export default withRouter(AddBookmark);
 export default AddBookmark;
->>>>>>> context-startingpoint
