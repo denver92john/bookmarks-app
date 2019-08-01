@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "adkins1393-bookmarks-app",
+    "name": "bookmarks-app",
+    "routes": [
+        {
+            "src": "^/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": ".*",
+            "dest": "/index.htlm"
+        }
+    ]
+}
