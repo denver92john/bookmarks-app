@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "adkins1393-bookmarks-app",
     "name": "bookmarks-app",
     "routes": [
         {
