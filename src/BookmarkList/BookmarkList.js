@@ -5,9 +5,20 @@ import BookmarkItem from '../BookmarkItem/BookmarkItem';
 import './BookmarkList.css'
 
 class BookmarkList extends Component {
-  //static defaultProps = {
-    //bookmarks: []
-  //};
+  static propTypes = {
+    bookmarks: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.oneOfType([
+          PropTypes.number,
+          PropTypes.string
+        ]).isRequired,
+      })
+    )
+  };
+
+  static defaultProps = {
+    bookmarks: []
+  };
 
   static contextType = BookmarksContext;
 
@@ -29,6 +40,7 @@ class BookmarkList extends Component {
   }
 }
 
+/*
 BookmarkList.propTypes = {
   bookmarks: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -37,5 +49,6 @@ BookmarkList.propTypes = {
     description: PropTypes.string
   }))
 }
+*/
 
 export default BookmarkList;

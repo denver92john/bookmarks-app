@@ -18,13 +18,13 @@ export default function Rating(props) {
 Rating.defaultProps = {
   value: 1
 };
-/*
+
 Rating.propTypes = {
   value: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired
 }
-*/
 
-Rating.propTypes = {
+
+/*Rating.propTypes = {
   value: (props, propName, componentName) => {
     // first get the value of the prop
     const prop = props[propName];
@@ -44,4 +44,4 @@ Rating.propTypes = {
       return new Error(`Invalid prop, ${propName} should be in range 1 - 5 in ${componentName}. ${prop} found.`);
     }
   }
-};
+};*/
